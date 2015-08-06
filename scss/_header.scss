@@ -1,0 +1,17 @@
+.page-logo {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+
+	.page-logo-contents {
+		display: inline-block;
+		padding: 20px;
+
+		@include borderRadius(10px);
+		background-color: white;
+
+		.page-logo-contents-text {
+			margin-top: 0;
+		}
+	}
+}

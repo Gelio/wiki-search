@@ -11,10 +11,24 @@
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 
+    <script src="modules/searchModule.js"></script>
     <script src="app.js"></script>
 </head>
 <body ng-app="wikiSearch">
 
+<section class="info-section">
+    <div class="page-logo">
+         <header class="page-logo-contents">
+            <img class="img-responsive center-block" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/WikipediaLogo.PNG" alt="Wikipedia's logo">
+            <h1 class="page-logo-contents-text">Wikipedia Search</h1>
+         </header>
+    </div>
+
+    <div class="search-bar" ng-controller="SearchCtrl">
+        <input type="search" class="search-bar-input" name="searchBar" placeholder="Search" ng-focus="focus=true">
+        {{focus}}
+    </div>
+</section>
 
 </body>
 </html>
