@@ -8,7 +8,7 @@
 
     searchModule.controller("SearchCtrl", ["$scope", "$http", function($scope, $http) {
         $(window).resize(function(){
-            $(".info-section").css("margin-left", ($scope.moveInfoToLeft ? 0 : getProperLeftMargin()+"px"));
+            $(".info-section").css("margin-left", ($scope.moveInfoToLeft ? 0 : getProperSectionMargin()+"px"));
         });
 
         $scope.moveInfoToLeft = false;
