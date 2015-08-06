@@ -4,29 +4,9 @@ body {
 	background-color: #ecfd71;
 }
 
-.info-section {
-	width: 100%;
-	margin: 10px auto;
-	transition: margin linear 0.5s;
-
-	@media screen and (min-width: 640px) {
-		width: 50%;
-	}
-
-	@media screen and (min-width: 1024px) {
-		width: 40%;
-	}
-
-	@media screen and (min-width: 1600px) {
-		width: 30%;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.info-section.move-to-left {
-
-	}
-}
 
 @import "scss/header";
-@import "scss/search-bar";
+
+@import "scss/info-section";
+
+@import "scss/items-section";
