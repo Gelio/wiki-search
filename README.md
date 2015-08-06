@@ -4,7 +4,7 @@ This utility allows you to do a wikipedia title search and displays results as y
 
 ## TODO ##
 * layout
-* connecting to wikipedia's API [https://en.wikipedia.org/w/api.php?action=help&modules=opensearch](https://en.wikipedia.org/w/api.php?action=help&modules=opensearch)
+* connecting to [wikipedia's API](https://en.wikipedia.org/w/api.php?action=help&modules=opensearch)
 * displaying clickable results (titles + short description)
 * autocompletion
 
