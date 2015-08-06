@@ -3,7 +3,8 @@ body {
 
 .info-section {
   width: 100%;
-  margin: 10px auto; }
+  margin: 10px auto;
+  transition: margin linear 0.5s; }
   @media screen and (min-width: 640px) {
     .info-section {
       width: 50%; } }

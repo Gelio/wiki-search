@@ -14,9 +14,9 @@
     <script src="modules/searchModule.js"></script>
     <script src="app.js"></script>
 </head>
-<body ng-app="wikiSearch">
+<body ng-app="wikiSearch" ng-controller="SearchCtrl">
 
-<section class="info-section">
+<section class="info-section" ng-class="{'move-to-left': moveInfoToLeft}">
     <div class="page-logo">
          <header class="page-logo-contents">
             <img class="img-responsive center-block" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/WikipediaLogo.PNG" alt="Wikipedia's logo">
@@ -24,9 +24,9 @@
          </header>
     </div>
 
-    <div class="search-bar" ng-controller="SearchCtrl">
-        <input type="search" class="search-bar-input" name="searchBar" placeholder="Search" ng-focus="focus=true">
-        {{focus}}
+    <div class="search-bar">
+        <input type="search" class="search-bar-input" name="searchBar" autocomplete="off" placeholder="Search" ng-model="searchBar" ng-focus="setSearchBarFocus(true)" ng-blur="setSearchBarFocus(false)" ng-change="checkSearchBar()">
+        {{moveInfoToLeft}}
     </div>
 </section>
 
