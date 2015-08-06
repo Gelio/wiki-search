@@ -1,5 +1,6 @@
 <span>
     <a href="" ng-href="{{item.link}}">
-        {{item.header}} - {{item.description}}
+        <h3>{{item.header}}</h3>
     </a>
+    <p ng-show="item.description.length">{{item.description}}</p>
 </span>

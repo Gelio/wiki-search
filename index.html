@@ -14,6 +14,7 @@
     <script src="settings.js"></script>
     <script src="modules/wikipediaItemClass.js"></script>
     <script src="modules/listModule.js"></script>
+    <!--<script src="modules/autocompleteModule.js"></script>-->
     <script src="modules/searchModule.js"></script>
     <script src="app.js"></script>
 </head>
@@ -28,12 +29,15 @@
     </div>
 
     <div class="search-bar">
-        <input type="search" class="search-bar-input" name="searchBar" autocomplete="off" placeholder="Search" ng-model="searchBar" ng-focus="setSearchBarFocus(true)" ng-blur="setSearchBarFocus(false)" ng-change="checkSearchBar()">
+        <input type="search"  class="search-bar-input" name="searchBar" autocomplete="off" placeholder="Search" ng-model="searchBar" ng-focus="setSearchBarFocus(true)" ng-blur="setSearchBarFocus(false)" ng-change="checkSearchBar()">
+        <!--<datalist id="autocompleteList">
+            <option value="{{autocompleteOption}}" ng-repeat="autocompleteOption in autocompleteList">
+        </datalist>-->
     </div>
 </section>
 
 <section class="items-section" ng-class="{'show-items': showItems}">
-    <div class="items-section-list" ng-controller="ListCtrl">
+    <div class="items-section-list">
         <div class="" ng-show="(itemsFetched && itemsList.length == 0)">
             No matching articles.
         </div>

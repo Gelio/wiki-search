@@ -3,6 +3,8 @@
 
 	text-align: center;
 
+	//position: relative;
+
 
 	.search-bar-input {
 		padding: 5px;
@@ -12,3 +14,24 @@
 		font-size: 2em;
 	}
 }
+
+/*.autocomplete-options {
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 5px;
+	text-align: left;
+	z-index: 1;
+	background-color: white;
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+		text-indent: 5px;
+
+		li {
+			border-bottom: solid 1px;
+			margin-bottom: 5px;
+			padding-bottom: 5px;
+		}
+	}
+}*/

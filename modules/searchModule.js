@@ -10,7 +10,7 @@
 
     searchModule.controller("SearchCtrl", ["$scope", "$http", "$timeout", function($scope, $http, $timeout) {
         $(window).resize(function(){
-            $(".info-section").css("margin-left", ($scope.moveInfoToLeft ? 0 : getProperSectionMargin()+"px"));
+            $scope.setSearchBarFocus(false);
         });
 
         function fetchData()
@@ -45,7 +45,7 @@
                 })
                 .error(function(data, status) {
                     console.log("error getting data from wikipedia", data, statsu);
-                })
+                });
         }
 
         $scope.showItems = showItems;
@@ -63,6 +63,7 @@
                 $timeout.cancel(searchTimeoutPromise);
 
             searchTimeoutPromise = $timeout(fetchData, fetchDataDelay);
+            //$scope.autocompleteFetch($scope.searchBar);
         };
 
         $scope.setSearchBarFocus = function(focused) {
