@@ -3,9 +3,7 @@
 This utility allows you to do a wikipedia title search and displays results as you type (autocompletion enabled).
 
 ## TODO ##
-* layout - items list
-* autocompletion
-* delete list controller if not used
+* autocompletion (tried but didn't work out)
 
 ## Technologies used ##
 * HTML
