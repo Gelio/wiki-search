@@ -1,5 +1,5 @@
 (function() {
-    var app = angular.module("wikiSearch", ["SearchModule"]);
+    var app = angular.module("wikiSearch", ["SearchModule", "ListModule"]);
 
 
 })();
